@@ -35,13 +35,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: sparkymat/archmark:${{ steps.get_version.outputs.VERSION }}
-      - name: Build and push worker
-        id: docker_build_worker
-        uses: docker/build-push-action@v2
-        with:
-          file: Dockerfile_worker
-          push: true
-          tags: sparkymat/archmark-worker:${{ steps.get_version.outputs.VERSION }}
+          tags: sparkymat/oxmud:${{ steps.get_version.outputs.VERSION }}
       - name: Release
         uses: softprops/action-gh-release@v1
