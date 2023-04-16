@@ -1,0 +1,3 @@
+{% func Home() %}
+  <div id="oxmud-app"></div>
+{% endfunc %}
