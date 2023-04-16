@@ -21,7 +21,7 @@ var (
 func StreamHome(qw422016 *qt422016.Writer) {
 //line view/home.qtpl:1
 	qw422016.N().S(`
-  <div id="oxmud-app"></div>
+  <div id="oxmud-app" style="width: 100%; height: 100%;"></div>
 `)
 //line view/home.qtpl:3
 }
